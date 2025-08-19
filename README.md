@@ -1,1 +1,1 @@
-# The NitroVim Experience ⚡️
+# ⚡️ The NitroVim Experience ⚡️
