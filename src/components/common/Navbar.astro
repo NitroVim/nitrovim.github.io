@@ -2,11 +2,11 @@
 import { FaBars, FaGithub } from "react-icons/fa"
 ---
 
-<nav class="bg-blue-500/30 w-[90%] fixed z-10 top-5 left-1/2 -translate-x-1/2 backdrop-blur-xl border border-white/10 rounded-full">
+<nav class="bg-[#FC485033] w-[90%] fixed z-10 top-5 left-1/2 -translate-x-1/2 backdrop-blur-xl border border-white/10 rounded-full">
   <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
     <div class="relative flex h-16 items-center justify-between">
       <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-        <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
+        <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-[#FC4850]">
           <span class="absolute -inset-0.5"></span>
           <span class="sr-only">Open main menu</span>
           <FaBars />
@@ -18,31 +18,31 @@ import { FaBars, FaGithub } from "react-icons/fa"
         </div>
         <div class="hidden sm:ml-6 sm:block">
           <div class="flex space-x-4">
-            <a href="#" aria-current="page" class="block rounded-full bg-blue-950/50 px-3 py-2 text-base font-medium text-white">Docs</a>
-            <a href="#" class="block rounded-full px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Themes</a>
-            <a href="#" class="block rounded-full px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Features</a>
-            <a href="#" class="block rounded-full px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Updates</a>
+            <a href="#" aria-current="page" class="block rounded-full bg-[#FC485050] px-3 py-2 text-base font-medium text-white">Docs</a>
+            <a href="#" class="block rounded-full px-3 py-2 text-base font-medium text-gray-300 hover:bg-[#FC485033] hover:text-white">Themes</a>
+            <a href="#" class="block rounded-full px-3 py-2 text-base font-medium text-gray-300 hover:bg-[#FC485033] hover:text-white">Features</a>
+            <a href="#" class="block rounded-full px-3 py-2 text-base font-medium text-gray-300 hover:bg-[#FC485033] hover:text-white">Updates</a>
           </div>
         </div>
       </div>
       <ul class="list-none absolute inset-y-0 right-0 flex gap-2 items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
         <li>
-          <a href="https://github.com/NitroVim/NitroVim" target="_blank" class="relative text-white cursor-pointer hover:text-white text-2xl">
+          <a href="https://github.com/NitroVim/NitroVim" target="_blank" class="relative text-white cursor-pointer hover:text-[#FC4850] text-2xl">
             <span class="absolute -inset-1.5"></span>
             <span class="sr-only">Github</span>
             <FaGithub />
           </a>
         </li>
-      </div>
+      </ul>
     </div>
   </div>
 
   <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
     <div class="space-y-1 px-2 pt-2 pb-3">
-      <a href="#" aria-current="page" class="block rounded-md bg-gray-950/50 px-3 py-2 text-base font-medium text-white">Docs</a>
-      <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Themes</a>
-      <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Features</a>
-      <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Updates</a>
+      <a href="#" aria-current="page" class="block rounded-md bg-[#FC485050] px-3 py-2 text-base font-medium text-white">Docs</a>
+      <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-[#FC485033] hover:text-white">Themes</a>
+      <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-[#FC485033] hover:text-white">Features</a>
+      <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-[#FC485033] hover:text-white">Updates</a>
     </div>
   </el-disclosure>
 </nav>
