@@ -5,14 +5,17 @@ import '../styles/global.css';
 import Home from '../components/sections/Home.astro';
 import Features from '../components/sections/Features.astro';
 import Footer from '../components/common/Footer.astro';
+import Updates from '../components/sections/Updates.astro';
+import Themes from '../components/sections/Themes.astro';
 ---
 
 <Layout>
-
-<main class="bg-linear-135 from-[#FC4850] to-[#C5383F]">
-    <Navbar />
-    <Home />
-    <Features />
-    <Footer/>
+  <main class="bg-[#1a1a1a]">
+      <Navbar />
+      <Home />
+      <Themes />
+      <Features />
+      <Updates />
+      <Footer />
   </main>
 </Layout>
