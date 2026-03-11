@@ -1,3 +1,7 @@
+---
+const getFullYear = new Date().getFullYear();
+---
+
 <footer class="py-10 px-6 bg-[#222222]/80 backdrop-blur-xl border-t border-white/10 text-white">
   <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
     
@@ -17,7 +21,7 @@
     </div>
 
     <p class="text-gray-300 text-sm md:text-base text-center md:text-left">
-      &copy; 2025 <b>NitroBrain</b>. All rights reserved.
+    &copy; {getFullYear} <b>NitroBrain</b>. All rights reserved.
     </p>
   </div>
 </footer>
