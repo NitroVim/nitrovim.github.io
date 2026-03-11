@@ -1,0 +1,44 @@
+---
+import { FaChevronDown } from "react-icons/fa";
+import {sidebar} from "../../data/sidebar";
+---
+
+<aside class="bg-[#222222]/80 w-[320px] h-full backdrop-blur-md rounded-2xl p-6 border shadow-lg overflow-y-auto">
+  <nav class="space-y-6">
+    {sidebar.map(section => {
+      const Icon = section.icon;
+      return (
+        <div>
+          <button
+            class="flex items-center justify-between w-full text-gray-300 hover:text-white font-semibold"
+            data-target={section.id}
+          >
+            <span class="flex items-center gap-2">
+              <Icon />
+              {section.title}
+            </span>
+            <span class="text-xs"><FaChevronDown /></span>
+          </button>
+
+          <ul id={section.id} class="mt-2 ml-6 space-y-2 hidden">
+            {section.items.map(item => (
+              <li>
+                <a href={item.href} class="block text-gray-400 hover:text-white transition">
+                  {item.title}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )
+    })}
+  </nav>
+</aside>
+
+<script>
+  document.querySelectorAll("button[data-target]").forEach(btn => {
+    const button = btn as HTMLButtonElement;
+    const submenu = document.getElementById(button.dataset.target!);
+    button.addEventListener("click", () => submenu?.classList.toggle("hidden"));
+  });
+</script>
