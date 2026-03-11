@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Sidebar from '../components/common/Sidebar.astro'
+import '../styles/global.css';
+---
+
+<Layout>
+  <main class="bg-[#1a1a1a] p-5 h-screen flex gap-5">
+      <Sidebar />
+      <section class="flex-1 overflow-auto p-6 bg-[#222222]/80 backdrop-blur-md rounded-2xl border shadow-lg">
+      </section>
+  </main>
+</Layout>
